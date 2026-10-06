@@ -91,17 +91,13 @@ For RGBA images, the alpha channel is not modified.
 ## Image Formats
 
 LSB steganography requires the pixel values to remain unchanged.
-
 Use lossless formats such as PNG or BMP for the encoded output.
-
 JPEG should NOT be used as the output format because JPEG compression can modify the pixel values and destroy the hidden message.
-
 A JPEG can still be used as the input image if the encoded image is saved as a lossless format (for example, JPEG input and PNG output).
 
 ## How It Works
 
 The message is converted to UTF-8 bytes and then into individual bits.
-
 These bits are stored in the least significant bit of image pixel values.
 
 Example:
@@ -111,11 +107,8 @@ Example:
     Encoded pixel:   10110111
 
 Only the least significant bit is changed, so the visual difference is negligible.
-
 For RGB and RGBA images, the red, green, and blue channels are used.
-
 For RGBA images, the alpha channel is left untouched.
-
 For L images, the least significant bit of each grayscale pixel is used.
 
 ## Dependencies
@@ -142,7 +135,5 @@ Install dependencies with:
 ## Disclaimer
 
 This project is an educational implementation of LSB steganography.
-
 It is intended for learning about image manipulation, binary data, NumPy, and steganography.
-```
 
