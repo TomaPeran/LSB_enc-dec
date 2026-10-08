@@ -131,6 +131,14 @@ Install dependencies with:
     ├── main.py         -> Command-line interface
     ├── README.md
     └── requirements.txt
+    
+## TODO:
+- [ ] Add encryption (e.g. AES-GCM) before embedding the message.
+- [ ] Add tests for encoding/decoding, including Unicode and edge cases.
+- [ ] Improve error handling for invalid images and messages that exceed image capacity.
+- [ ] Add support for embedding arbitrary binary files, not only text messages.
+- [ ] Improve the embedding algorithm by using pseudorandom pixel positions derived from a key.
+
 
 ## Disclaimer
 
